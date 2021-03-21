@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# https://github.com/davatorium/rofi-scripts
+
 function tmux_sessions()
 {
     tmux list-session -F '#S'
