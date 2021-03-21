@@ -1,0 +1,16 @@
+/** Basic config file **/
+
+configuration {
+	modi: "window,run,ssh,calc";
+	width: 32;
+	lines: 8;
+	font: "FantasqueSansMono Nerd Font 16";
+	terminal: "kitty";
+	line-margin: 0;
+	line-padding: 0;
+	hide-scrollbar: true;
+	scroll-method: 1;
+	show-match: true;
+	theme: "nord";
+	max-history-size: 16;
+}
