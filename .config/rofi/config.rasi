@@ -11,6 +11,7 @@ configuration {
 	hide-scrollbar: true;
 	scroll-method: 1;
 	show-match: true;
-	theme: "nord";
+	theme: "colors-rofi-dark";
+	/*theme: "nord";*/
 	max-history-size: 16;
 }

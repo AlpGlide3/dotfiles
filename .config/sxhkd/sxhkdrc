@@ -25,11 +25,10 @@ super + Escape
 super + r ; {c,w,q,p,m,t,s}
 	~/scripts/rofi-mode.sh {c,w,q,p,m,t,s}
 
-# why doesn't this work when not directly run
 super + n
 	~/scripts/rofi-network-manager.sh
 
-# scrot: fix this later: remove since rofi thing?
+# scrot: fix this later
 super + alt + s
 	sleep 0.50 && scrot '%Y-%m-%d_$wx$h.png' -e 'mv $f ~/scrots' -s
 

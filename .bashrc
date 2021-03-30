@@ -31,8 +31,8 @@ HISTFILESIZE=100000
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
 # export SYSTEMD_PAGER=
 
-# use xresources
-export PS1="\[$(printf "\x1b[38;2;180;142;173m\]  \W\[\x1b[0m")\]\n \[$(printf "\x1b[38;2;136;192;208m\]>\[\x1b[0m")\] "
+# use xresources, fix this soon
+export PS1="\[$(printf "\x1b[38;2;140;109;102m\]  \W\[\x1b[0m")\]\n \[$(printf "\x1b[38;2;61;100;70m\]>\[\x1b[0m")\] "
 PS2=" > "
 
 # User specific aliases and functions
@@ -41,3 +41,7 @@ alias ls='ls --color'
 alias date='date -Iseconds'
 alias rm='rm -i'
 alias dots='git --git-dir="$HOME/.dotfiles.git" --work-tree="$HOME"'
+
+# colors
+(cat ~/.cache/wal/sequences &)
+source ~/.cache/wal/colors-tty.sh

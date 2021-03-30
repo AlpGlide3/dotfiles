@@ -1,4 +1,16 @@
 ;
+; colors
+;
+
+[colors]
+background = ${xrdb:color0:#222}
+foreground = ${xrdb:color7:#222}
+foreground-alt = ${xrdb:color7:#222}
+primary = ${xrdb:color1:#222}
+secondary = ${xrdb:color2:#222}
+alert = ${xrdb:color3:#222}
+
+;
 ; modules
 ;
 
@@ -107,11 +119,11 @@ height = 32
 offset-x = 4.6875%
 offset-y = 8
 
-background = #2e3440
-foreground = #eceff4
+background = ${colors.background}
+foreground = ${colors.foreground}
 
 border-size = 2
-border-color = #88c0d0
+border-color = ${colors.primary}
 padding = 1
 
 fixed-center = true
@@ -128,11 +140,11 @@ height = 32
 offset-x = 35.9375%
 offset-y = 8
 
-background = #2e3440
-foreground = #eceff4
+background = ${colors.background}
+foreground = ${colors.foreground}
 
 border-size = 2
-border-color = #88c0d0
+border-color = ${colors.primary}
 padding = 1
 
 fixed-center = true
@@ -149,11 +161,11 @@ height = 32
 offset-x = 67.1875%
 offset-y = 8
 
-background = #2e3440
-foreground = #eceff4
+background = ${colors.background}
+foreground = ${colors.foreground}
 
 border-size = 2
-border-color = #88c0d0
+border-color = ${colors.primary}
 padding = 1
 
 fixed-center = true
@@ -170,11 +182,11 @@ height = 32
 offset-x = 4.6875%
 offset-y = 8
 
-background = #2e3440
-foreground = #eceff4
+background = ${colors.background}
+foreground = ${colors.foreground}
 
 border-size = 2
-border-color = #88c0d0
+border-color = ${colors.primary}
 padding = 1
 
 fixed-center = true
@@ -191,11 +203,11 @@ height = 32
 offset-x = 35.9375%
 offset-y = 8
 
-background = #2e3440
-foreground = #eceff4
+background = ${colors.background}
+foreground = ${colors.foreground}
 
 border-size = 2
-border-color = #88c0d0
+border-color = ${colors.primary}
 padding = 1
 
 fixed-center = true
@@ -212,11 +224,11 @@ height = 32
 offset-x = 67.1875%
 offset-y = 8
 
-background = #2e3440
-foreground = #eceff4
+background = ${colors.background}
+foreground = ${colors.foreground}
 
 border-size = 2
-border-color = #88c0d0
+border-color = ${colors.primary}
 padding = 1
 
 fixed-center = true

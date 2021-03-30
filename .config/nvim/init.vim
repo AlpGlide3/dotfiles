@@ -6,14 +6,12 @@ Plug 'wellle/targets.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
+Plug 'tpope/vim-surround'
 Plug 'tpope/vim-sexp-mappings-for-regular-people', { 'for': 'scheme' }
-Plug 'arcticicestudio/nord-vim'
-" use a slightly edited version of forest-night: more contrast
-Plug 'sainnhe/forest-night'
+Plug 'dylanaraps/wal.vim'
 call plug#end()
 
-" colorscheme forest-night
-colorscheme nord
+colorscheme wal
 
 " set stuff
 set hidden
@@ -26,13 +24,20 @@ set nowrap
 set autoindent
 set number
 set rnu
+set autochdir
 set laststatus=1
 set listchars=tab:\ \ \|,trail:~,extends:>,precedes:<
 set list
+set tabstop=8
+set nosmarttab
+set shiftwidth=8
+set wildcharm=<C-z>
 
 " mappings and stuff
 " buffer navigation
 nnoremap gb :ls<CR>:b<space>
+" thing
+nnoremap <leader>e :e **/*<C-z><S-tab>
 " search and replace, does boilerplate for you
 nnoremap <leader>r :%s//g<left><left>
 " split line
@@ -42,8 +47,6 @@ map Y y$
 " remote yank: from wellle
 nnoremap <silent> gy :<C-U>call MarkAndSetOpfunc()<CR>g@
 vnoremap <silent> gy :<C-U>call MarkYankAndJump()<CR>
-" source init.vim
-nnoremap <silent> <leader>i :source ~/.config/nvim/init.vim
 
 " vim-sneak thing
 let g:sneak#label = 1
